@@ -1,5 +1,7 @@
 @echo off
 SETLOCAL
+rem ### PATCHED because original contains some error handling whitespaces and nasty chars in path ###
+rem ### 0.90.6 seems to fix this ###
 
 if NOT DEFINED JAVA_HOME goto err
 
