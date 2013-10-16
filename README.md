@@ -26,3 +26,5 @@ Prerequisites for building the MSI package:
 Prerequisites for installing the MSI package:
 * Win 7 64bit or Win 2008 64bit (Win 2012 64bit may work or, not tested yet)
 
+Download the msi (as binary) from here if you do not want to build it on your own: 
+https://docs.google.com/file/d/0Byd4-ZyNs6TqeXEyX3RuWko1S0E/edit?usp=sharing (100 MB)
