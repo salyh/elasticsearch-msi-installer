@@ -32,4 +32,5 @@ Unzip ($thisScript+$downloadFolder+"\"+(Split-Path -Path ([System.Uri]$env:ES_DI
 Unzip ($thisScript+$downloadFolder+"\"+(Split-Path -Path ([System.Uri]$env:WIX_DIST_DOWNLOAD_URL).LocalPath -leaf))  ($thisScript + $wixFolder)
 Untgz ($thisScript+$downloadFolder+"\"+(Split-Path -Path ([System.Uri]$env:JAVA_DIST_DOWNLOAD_URL).LocalPath -leaf))  ($thisScript + $packageFolder)
 
+Rename-Item -path ($thisScript + $packageFolder+ "\"+ $env:JAVA_FOLDER_NAME) -newName ($thisScript + $packageFolder+ "\jdk")
 Copy-Item ($thisScript + '\src\*.*') ($thisScript + $packageFolder+ '\'+$env:ES_DIST_NAME+'\bin\')

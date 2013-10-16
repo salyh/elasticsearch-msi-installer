@@ -30,12 +30,14 @@ function DownloadFile($url)
 try {
 
  
-  Register-ObjectEvent $client DownloadProgressChanged -action {     
-
-        Write-Progress -Activity "Downloading" -Status `
-            ("{0} of {1}" -f $eventargs.BytesReceived, $eventargs.TotalBytesToReceive) `
-            -PercentComplete $eventargs.ProgressPercentage    
-    }
+  #Register-ObjectEvent $client DownloadProgressChanged -action {     
+#
+ #       if($eventargs.ProgressPercentage % 10){
+  #          Write-Progress -Activity "Downloading" -Status `
+   #         ("{0} of {1}" -f $eventargs.BytesReceived, $eventargs.TotalBytesToReceive) `
+    #        -PercentComplete $eventargs.ProgressPercentage   
+     #   } 
+    #}
 
    
    
