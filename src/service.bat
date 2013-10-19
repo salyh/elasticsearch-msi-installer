@@ -178,7 +178,7 @@ set JVM_ES_JAVA_OPTS=%ES_JAVA_OPTS: =#%
 set JVM_OPTS=%JVM_OPTS%;%JVM_ES_JAVA_OPTS%
 )
 
-%EXECUTABLE% //IS//%SERVICE_ID% --StartClass org.elasticsearch.bootstrap.ElasticSearch --StopClass org.elasticsearch.bootstrap.ElasticSearch --StartMethod main --StopMethod close --Classpath %ES_CLASSPATH% ++JvmOptions %JVM_OPTS% %LOG_OPTS% --PidFile "%SERVICE_ID%.pid" --DisplayName "Elasticsearch %ES_VERSION% (%SERVICE_ID%)" --Description "Elasticsearch %ES_VERSION% Windows Service - http://elasticsearch.org" --Jvm %JVM_DLL% --StartMode jvm --StopMode jvm --StartPath "%ES_HOME%"
+%EXECUTABLE% //IS//%SERVICE_ID% --Startup=auto --StartClass org.elasticsearch.bootstrap.ElasticSearch --StopClass org.elasticsearch.bootstrap.ElasticSearch --StartMethod main --StopMethod close --Classpath %ES_CLASSPATH% ++JvmOptions %JVM_OPTS% %LOG_OPTS% --PidFile "%SERVICE_ID%.pid" --DisplayName "Elasticsearch %ES_VERSION% (%SERVICE_ID%)" --Description "Elasticsearch %ES_VERSION% Windows Service - http://elasticsearch.org" --Jvm %JVM_DLL% --StartMode jvm --StopMode jvm --StartPath "%ES_HOME%"
 
 
 if not errorlevel 1 goto installed
