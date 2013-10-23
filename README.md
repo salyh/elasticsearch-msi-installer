@@ -27,4 +27,4 @@ Prerequisites for installing the MSI package:
 * Win 7 64bit or Win 2008 64bit or Win 2012 64bit
 
 Download the msi (as binary) from here if you do not want to build it on your own: 
-https://docs.google.com/file/d/0Byd4-ZyNs6TqeXEyX3RuWko1S0E/edit?usp=sharing (ES 0.90.5, Java 7u40, Size: 100 MB)
+https://github.com/salyh/elasticsearch-msi-installer/releases (Approx 100 MB)
