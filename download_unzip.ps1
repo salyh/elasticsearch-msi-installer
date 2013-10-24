@@ -5,7 +5,7 @@ function Untgz($zipFile, $untgzfolder)
   
   set-alias sza $sz
   sza -xzf $zipFile -C $untgzfolder
-  write-host "Untgz'ed $zipFile to $untgzfolder"
+  write-host "Unzipped $zipFile to $untgzfolder"
 }
 
 function Unzip($zipFile, $untgzfolder)
@@ -14,7 +14,7 @@ function Unzip($zipFile, $untgzfolder)
   
   set-alias unzip $sz
   unzip -q $zipFile -d $untgzfolder
-  write-host "Untgz'ed $zipFile to $untgzfolder"
+  write-host "Unzipped $zipFile to $untgzfolder"
 }
 
 
@@ -22,7 +22,9 @@ function DownloadFile($url)
 {
    $localPath = $thisScript+$downloadFolder+"\"+(Split-Path -Path ([System.Uri]$url).LocalPath -leaf)
    $client = New-Object System.Net.WebClient
-   $client.Proxy = [System.Net.WebRequest]::DefaultWebProxy
+   #$client.Proxy = [System.Net.WebRequest]::DefaultWebProxy
+   
+   #this header is to automatically accept java license when downloading from oracle   
    $client.Headers.Add([System.Net.HttpRequestHeader]::Cookie, "gpw_e24=http%3A%2F%2Fwww.oracle.com%2F")
    $client.Headers["User-Agent"] = "Safari"
 

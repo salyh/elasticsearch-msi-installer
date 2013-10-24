@@ -1,5 +1,7 @@
-rem set proxy if needed
-rem set JAVA_OPTS=%JAVA_OPTS% -Dhttp.proxyHost=webproxy1.pta.de -Dhttp.proxyPort=80
+@echo off
+rem set proxy, if needed, to download elasticsearch/java and plugins 
+rem set HTTP_PROXY=http://proxy.domain.com:port
+set HTTP_PROXY=http://webproxy1.pta.de:80
 
 set ESI_VERSION=2
 
@@ -26,3 +28,8 @@ set PACKAGE_FOLDER_NAME=content
 set PACKAGE_FOLDER=%GENERATED_TOP_FOLDER%\%PACKAGE_FOLDER_NAME%
 set TOOLS_FOLDER=%GENERATED_TOP_FOLDER%\tools
 set WIX_FOLDER=%TOOLS_FOLDER%\WIX-%WIX_DIST_VERSION%
+
+if NOT "%HTTP_PROXY%" == "" (
+	for /f "tokens=1,2,3 delims=/:" %%a in ("%HTTP_PROXY%") do set protocol=%%a&set host=%%b&set port=%%c
+	set JAVA_OPTS=%JAVA_OPTS% -D%protocol%.proxyHost=%host% -D%protocol%.proxyPort=%port%	
+)
