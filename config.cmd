@@ -1,7 +1,7 @@
 rem set proxy if needed
-set JAVA_OPTS=%JAVA_OPTS% -Dhttp.proxyHost=webproxy1.pta.de -Dhttp.proxyPort=80
+rem set JAVA_OPTS=%JAVA_OPTS% -Dhttp.proxyHost=webproxy1.pta.de -Dhttp.proxyPort=80
 
-set ESI_VERSION=1
+set ESI_VERSION=2
 
 rem set JAVA Version
 set JAVA_DIST_VERSION=7u45
