@@ -60,3 +60,23 @@ try {
 }
 
 }
+
+
+#  Author:          Gregory Strike
+#  Website:         www.gregorystrike.com
+#  Purpose:         Outputs which version (32-bit or 64-bit) of PowerShell is currently being run
+Function Powershell-Bits(){
+    Switch ([System.Runtime.InterOpServices.Marshal]::SizeOf([System.IntPtr])) {
+        4 {
+            Return "32-bit"
+        }
+        
+        8 { 
+            Return "64-bit"
+        }
+        
+        default {
+            Return "Unknown Type"
+        }
+    }
+}

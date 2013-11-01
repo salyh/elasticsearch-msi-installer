@@ -2,10 +2,14 @@
 #requires -version 2.0
 $script:ErrorActionPreference = "Stop"
 Set-StrictMode -Version Latest
+ 
 
 #$psversiontable.psversion
 $thisScript = Split-Path -Path $MyInvocation.MyCommand.Definition -Parent
 . ($thisScript + '\download_unzip.ps1')
+
+$bits=Powershell-Bits 
+"Using the " + $bits + " Powershell"
 
 $downloadFolder='\'+$env:DOWNLOAD_FOLDER
 $packageFolder='\'+$env:PACKAGE_FOLDER
