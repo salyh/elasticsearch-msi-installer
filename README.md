@@ -10,6 +10,8 @@ Easy way:
 Just download/clone the repository and double click DUPC.cmd and if its finished then double click MKMSI.cmd
 Thats it, find your installer (.mis and .cab's) in target\msi
 
+Elasticsearch will be installed into "C:\Program Files\Elasticsearch\content".
+
 Customizable way:
 * Revise config.cmd (change ES/JAVA/WIX versions and folder names)
 * Revise esidist_plugininstall.bat (add/remove ES plugins)
@@ -17,7 +19,9 @@ Customizable way:
 * Revise elasticsearch.yml
 * Revise logging.yml
 * Revise JAVA_OPTS and Java memory config (heap size)
+* Change installation path: https://github.com/salyh/elasticsearch-msi-installer/wiki/Change-installation-path
 * Run MKMSI.cmd
+
 
 Prerequisites for building the MSI package:
 * Broadband internet connection (proxy is also supported)
