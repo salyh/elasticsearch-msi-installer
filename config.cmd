@@ -7,10 +7,10 @@ rem set HTTP_PROXY=http://webproxy1.pta.de:80
 set ESI_VERSION=3
 
 rem set JAVA Version
-set JAVA_DIST_VERSION=7u45
-set JAVA_DIST_VERSION_PATCHLEVEL=b18
+set JAVA_DIST_VERSION=7u51
+set JAVA_DIST_VERSION_PATCHLEVEL=b13
 set JAVA_DIST_NAME=server-jre-%JAVA_DIST_VERSION%-windows-x64
-set JAVA_FOLDER_NAME=jdk1.7.0_45
+set JAVA_FOLDER_NAME=jdk1.7.0_51
 set JAVA_DIST_DOWNLOAD_URL=http://download.oracle.com/otn-pub/java/jdk/%JAVA_DIST_VERSION%-%JAVA_DIST_VERSION_PATCHLEVEL%/%JAVA_DIST_NAME%.tar.gz
 rem set JAVA_DIST_DOWNLOAD_URL=http://localhost:8010/%JAVA_DIST_NAME%.tar.gz
 
