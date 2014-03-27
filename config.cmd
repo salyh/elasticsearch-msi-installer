@@ -15,7 +15,7 @@ set JAVA_DIST_DOWNLOAD_URL=http://saly.de/%JAVA_DIST_NAME%.tar.gz
 rem set JAVA_DIST_DOWNLOAD_URL=http://localhost:8010/%JAVA_DIST_NAME%.tar.gz
 
 rem set Elasticsearch Version
-set ES_DIST_VERSION=0.90.12
+set ES_DIST_VERSION=0.90.13
 set ES_DIST_NAME=elasticsearch-%ES_DIST_VERSION%
 set ES_DIST_DOWNLOAD_URL=https://download.elasticsearch.org/elasticsearch/elasticsearch/%ES_DIST_NAME%.zip
 rem set ES_DIST_DOWNLOAD_URL=http://localhost:8010/%ES_DIST_NAME%.zip
