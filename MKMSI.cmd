@@ -12,7 +12,7 @@ echo --------------------------------------
 echo ### ERROR #### Execute DUPC.cmd first!
 echo --------------------------------------
 echo.
-pause
+rem pause
 goto eof
 
 :exists
@@ -37,9 +37,9 @@ echo.
 echo Finished with phase "MKMSI" (Make MSI)
 echo You should now find your final .msi file here: %MSI_FOLDER%
 echo.
-pause
+rem pause
 goto :eof
 
 :badenv
 echo Bad environment, check config.cmd
-pause
+rem pause

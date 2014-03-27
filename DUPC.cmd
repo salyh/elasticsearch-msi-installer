@@ -38,9 +38,9 @@ echo     "%~dp0%PACKAGE_FOLDER%\%ES_DIST_NAME%\config"
 echo.
 echo Then run "MKMSI.cmd" to build the .msi package (Phase MKMSI - Make MSI)
 echo.
-pause
+rem pause
 goto :eof
 
 :badenv
 echo Bad environment, check config.cmd
-pause
+rem pause
