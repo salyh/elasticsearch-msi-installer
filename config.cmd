@@ -7,15 +7,15 @@ rem set HTTP_PROXY=http://webproxy1.pta.de:80
 set ESI_VERSION=4
 
 rem set JAVA Version
-set JAVA_DIST_VERSION=7u51
+set JAVA_DIST_VERSION=7u55
 rem set JAVA_DIST_VERSION_PATCHLEVEL=b13
 set JAVA_DIST_NAME=server-jre-%JAVA_DIST_VERSION%-windows-x64
-set JAVA_FOLDER_NAME=jdk1.7.0_51
+set JAVA_FOLDER_NAME=jdk1.7.0_55
 set JAVA_DIST_DOWNLOAD_URL=http://saly.de/%JAVA_DIST_NAME%.tar.gz
 rem set JAVA_DIST_DOWNLOAD_URL=http://localhost:8010/%JAVA_DIST_NAME%.tar.gz
 
 rem set Elasticsearch Version
-set ES_DIST_VERSION=1.0.2
+set ES_DIST_VERSION=1.2.1
 set ES_DIST_NAME=elasticsearch-%ES_DIST_VERSION%
 set ES_DIST_DOWNLOAD_URL=https://download.elasticsearch.org/elasticsearch/elasticsearch/%ES_DIST_NAME%.zip
 rem set ES_DIST_DOWNLOAD_URL=http://localhost:8010/%ES_DIST_NAME%.zip
