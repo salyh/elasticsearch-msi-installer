@@ -1,4 +1,6 @@
 @echo off
+rem Copyright 2014-2015 Hendrik Saly
+rem Licensed under the Apache License, Version 2.0
 
 rem java config
 set ES_JAVA_OPTS=-XX:+UseCondCardMark
